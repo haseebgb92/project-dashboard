@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: project-dashboard
+    env: node
+    buildCommand: npm install && cd client && npm install && npm run build && cd ..
+    startCommand: node server.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 5000
+      - key: JWT_SECRET
+        generateValue: true
+      - key: CLIENT_URL
+        value: https://dashboard.advertpreneur.com
+      - key: MONGODB_URI
+        sync: false

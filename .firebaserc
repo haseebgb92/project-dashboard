@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "project-dashboard-10b29"
+  },
+  "targets": {
+    "project-dashboard-10b29": {
+      "hosting": {
+        "project-dashboard-advertpreneur": [
+          "project-dashboard-advertpreneur"
+        ]
+      }
+    }
+  }
+}
